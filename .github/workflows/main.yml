@@ -26,7 +26,7 @@ jobs:
         env:
           ALCUIN_USERNAME: ${{ secrets.ALCUIN_USERNAME }}
           ALCUIN_PASSWORD: ${{ secrets.ALCUIN_PASSWORD }}
-        run: python alcuin_to_ics.py
+        run: agenda alcuin purpan.py
 
       - name: Upload ICS to GitHub Pages
         run: |
